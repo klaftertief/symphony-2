@@ -158,6 +158,17 @@ button:focus,
 	cursor: pointer;
 }
 
+input[type=submit].selected,
+button.selected,
+.button.selected {
+	background-image: -webkit-linear-gradient(top, #fbfbfa 0%, #fbfbfa 30%, #e3e3df 100%);
+	box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.15), inset -1px -1px 2px rgba(255, 255, 255, 0.7);
+	cursor: pointer;
+	border-color: rgba(0, 0, 0, 0.25);
+	color: rgba(0, 0, 0, 1);
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+}
+
 input[type=submit][disabled=disabled]:hover,
 input[type=submit][disabled=disabled]:active,
 input[type=submit][disabled=disabled]:focus {
@@ -188,7 +199,14 @@ button.create:focus,
 .button.create:active,
 .button.create:focus {
 	border-color: rgba(50, 70, 23, 0.6);
-	color: #fff;
+	color: rgba(255, 255, 255, 0.99);
+}
+
+button.create:active,
+.button.create:active,
+button.create:focus,
+.button.create:focus {
+	
 }
 
 /* Delete buttons */
@@ -201,7 +219,7 @@ button.delete:focus,
 .button.delete:focus {
 	background: #dd4422;
 	border-color: #bb2211;
-	color: #fff;
+	color: rgba(255, 255, 255, 0.99);
 }
 
 /* "With selected…" menu */
